@@ -1,0 +1,17 @@
+.main_gudog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_gudog > i {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.main_gudog > span {
+  margin: 20px 0px;
+  font-size: 14px;
+}

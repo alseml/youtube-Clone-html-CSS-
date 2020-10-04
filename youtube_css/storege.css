@@ -1,0 +1,17 @@
+.main_storege {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_storege > i {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+
+.main_storege > span {
+  margin: 20px 0px;
+  font-size: 14px;
+}

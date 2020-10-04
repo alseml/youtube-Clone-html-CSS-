@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/14eec0ad7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="youtube_css/style.css" />
+    <title>youtube Clone Code</title>
+  </head>
+  <body>
+    <input id="menu_open" name="open_menu" type="radio" />
+    <input id="menu_open2" name="open_menu" type="radio" />
+
+    <header class="header">
+      <div class="header__column">
+        <label for="menu_open">
+          <i class="fas fa-bars">
+            <div class="circleAni"></div>
+          </i>
+        </label>
+
+        <a href="index.html" class="header__title">
+          <i class="fab fa-youtube"></i>
+          <h6>YouTube</h6>
+        </a>
+      </div>
+      <div class="header__column">
+        <input type="text" placeholder="검색" />
+        <div class="header__search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="header__column">
+        <div class="header__icons">
+          <i class="fas fa-video">
+            <div class="circleAni"></div>
+            <span>만들기</span>
+          </i>
+          <i class="fas fa-th">
+            <div class="circleAni"></div>
+            <span>YouTube 앱</span>
+          </i>
+          <i class="fas fa-ellipsis-v">
+            <div class="circleAni"></div>
+            <span>설정</span>
+          </i>
+          <div class="header__login-btn">
+            <div class="header__login-btn__user">
+              <i class="fas fa-user"></i>
+            </div>
+            <span>로그인</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="side_menu-hidden">
+      <div class="menu-hidden__title">
+        <label for="menu_open2">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="side_menu-hidden__title header__title">
+          <a href="index.html">
+            <i class="fab fa-youtube"></i>
+            <h6>YouTube</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="sideMenu_scroll">
+        <ul>
+          <li>
+            <label for="side_menu__icon1">
+              <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>홈</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon2">
+              <a href="ingi.html">
+                <i class="fas fa-fire"></i>
+                <span>인기</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon3">
+              <a href="gudog.html">
+                <i class="fab fa-youtube-square"></i>
+                <span>구독</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <label for="side_menu__icon4">
+              <a href="storege.html">
+                <i class="fas fa-hdd"></i>
+                <span>보관함</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="viewing-record.html">
+                <i class="fas fa-history"></i>
+                <span>시청 기록</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+
+        <div class="menu-hidden__login">
+          <p>
+            로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수
+            있습니다.
+          </p>
+          <div class="menu-hidden__login-btn">
+            <div class="header__login-btn__user">
+              <i class="fas fa-user"></i>
+            </div>
+            <span>로그인</span>
+          </div>
+        </div>
+        <h6 class="menu-hidden__index-title">인기 YOUTUBE</h6>
+
+        <ul>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-music"></i>
+                </div>
+                <span>음악</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-futbol"></i>
+                </div>
+                <span>스포츠</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <span>게임</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-film"></i>
+                </div>
+                <span>영화</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="far fa-newspaper"></i>
+                </div>
+                <span>뉴스</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-hourglass-half"></i>
+                </div>
+                <span>실시간</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="far fa-lightbulb"></i>
+                </div>
+                <span>학습</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-mask"></i>
+                </div>
+                <span>360º 동영상</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside class="side_menu">
+      <input id="side_menu__icon1" name="menu_select" type="radio" />
+      <input id="side_menu__icon2" name="menu_select" type="radio" />
+      <input id="side_menu__icon3" name="menu_select" type="radio" checked />
+      <input id="side_menu__icon4" name="menu_select" type="radio" />
+      <input id="side_menu__icon5" name="menu_select" type="radio" />
+
+      <ul>
+        <li>
+          <label for="side_menu__icon1">
+            <a href="index.html">
+              <i class="fas fa-home"></i>
+              <span>홈</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon2">
+            <a href="ingi.html">
+              <i class="fas fa-fire"></i>
+              <span>인기</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon3">
+            <a href="gudog.html">
+              <i class="fab fa-youtube-square"></i>
+              <span>구독</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon4">
+            <a href="storege.html">
+              <i class="fas fa-hdd"></i>
+              <span>보관함</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon5">
+            <a href="viewing-record.html">
+              <i class="fas fa-history"></i>
+              <span>시청 기록</span>
+            </a>
+          </label>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main_gudog">
+      <i class="fab fa-youtube-square"></i>
+      <h2>새로운 동영상을 높치지 마세요.</h2>
+      <span>즐겨찾는 YouTube 채널의 업데이트를 확인하려면 로그인하세요.</span>
+      <div class="header__login-btn">
+        <div class="header__login-btn__user">
+          <i class="fas fa-user"></i>
+        </div>
+        <span>로그인</span>
+      </div>
+    </div>
+  </body>
+</html>

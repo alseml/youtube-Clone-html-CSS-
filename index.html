@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/14eec0ad7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="youtube_css/style.css" />
+    <title>youtube Clone Code</title>
+  </head>
+  <body>
+    <input id="menu_open" name="open_menu" type="radio" />
+    <input id="menu_open2" name="open_menu" type="radio" />
+
+    <header class="header">
+      <div class="header__column">
+        <label for="menu_open">
+          <i class="fas fa-bars">
+            <div class="circleAni"></div>
+          </i>
+        </label>
+
+        <a href="index.html" class="header__title">
+          <i class="fab fa-youtube"></i>
+          <h6>YouTube</h6>
+        </a>
+      </div>
+      <div class="header__column">
+        <input type="text" placeholder="검색" />
+        <div class="header__search-icon">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="header__column">
+        <div class="header__icons">
+          <i class="fas fa-video">
+            <div class="circleAni"></div>
+            <span>만들기</span>
+          </i>
+          <i class="fas fa-th">
+            <div class="circleAni"></div>
+            <span>YouTube 앱</span>
+          </i>
+          <i class="fas fa-ellipsis-v">
+            <div class="circleAni"></div>
+            <span>설정</span>
+          </i>
+          <div class="header__login-btn">
+            <div class="header__login-btn__user">
+              <i class="fas fa-user"></i>
+            </div>
+            <span>로그인</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <aside class="side_menu-hidden">
+      <div class="menu-hidden__title">
+        <label for="menu_open2">
+          <i class="fas fa-bars"></i>
+        </label>
+        <div class="side_menu-hidden__title header__title">
+          <a href="index.html">
+            <i class="fab fa-youtube"></i>
+            <h6>YouTube</h6>
+          </a>
+        </div>
+      </div>
+
+      <div class="sideMenu_scroll">
+        <ul>
+          <li>
+            <label for="side_menu__icon1">
+              <a href="index.html">
+                <i class="fas fa-home"></i>
+                <span>홈</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon2">
+              <a href="ingi.html">
+                <i class="fas fa-fire"></i>
+                <span>인기</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon3">
+              <a href="gudog.html">
+                <i class="fab fa-youtube-square"></i>
+                <span>구독</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <label for="side_menu__icon4">
+              <a href="storege.html">
+                <i class="fas fa-hdd"></i>
+                <span>보관함</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="viewing-record.html">
+                <i class="fas fa-history"></i>
+                <span>시청 기록</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+
+        <div class="menu-hidden__login">
+          <p>
+            로그인하면 동영상에 좋아요를 표시하고 댓글을 달거나 구독할 수
+            있습니다.
+          </p>
+          <div class="menu-hidden__login-btn">
+            <div class="header__login-btn__user">
+              <i class="fas fa-user"></i>
+            </div>
+            <span>로그인</span>
+          </div>
+        </div>
+        <h6 class="menu-hidden__index-title">인기 YOUTUBE</h6>
+
+        <ul>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-music"></i>
+                </div>
+                <span>음악</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-futbol"></i>
+                </div>
+                <span>스포츠</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-gamepad"></i>
+                </div>
+                <span>게임</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-film"></i>
+                </div>
+                <span>영화</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="far fa-newspaper"></i>
+                </div>
+                <span>뉴스</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-hourglass-half"></i>
+                </div>
+                <span>실시간</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="far fa-lightbulb"></i>
+                </div>
+                <span>학습</span>
+              </a>
+            </label>
+          </li>
+          <li>
+            <label for="side_menu__icon5">
+              <a href="index.html">
+                <div class="side_menu__icons-circle">
+                  <i class="fas fa-mask"></i>
+                </div>
+                <span>360º 동영상</span>
+              </a>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <aside class="side_menu">
+      <input id="side_menu__icon1" name="menu_select" type="radio" checked />
+      <input id="side_menu__icon2" name="menu_select" type="radio" />
+      <input id="side_menu__icon3" name="menu_select" type="radio" />
+      <input id="side_menu__icon4" name="menu_select" type="radio" />
+      <input id="side_menu__icon5" name="menu_select" type="radio" />
+
+      <ul>
+        <li>
+          <label for="side_menu__icon1">
+            <a href="index.html">
+              <i class="fas fa-home"></i>
+              <span>홈</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon2">
+            <a href="ingi.html">
+              <i class="fas fa-fire"></i>
+              <span>인기</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon3">
+            <a href="gudog.html">
+              <i class="fab fa-youtube-square"></i>
+              <span>구독</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon4">
+            <a href="storege.html">
+              <i class="fas fa-hdd"></i>
+              <span>보관함</span>
+            </a>
+          </label>
+        </li>
+        <li>
+          <label for="side_menu__icon5">
+            <a href="viewing-record.html">
+              <i class="fas fa-history"></i>
+              <span>시청 기록</span>
+            </a>
+          </label>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="main">
+      <div class="main-border">
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">1:06:20</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/36Ua4Uruqmk">
+              <img src="https://j.gifs.com/lx1Og1.jpg" alt="" />
+              <img src="https://j.gifs.com/lx1Og1.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">03:16</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>Krewella - Human</h6>
+              </div>
+              <div class="video_count">
+                <span>Proximity </span>
+                <span>조회수 350만회 • 6년전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/QRFqphsEZeU">
+              <img src="https://j.gifs.com/wV1jwX.jpg" alt="" />
+              <img src="https://j.gifs.com/wV1jwX.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">03:21</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>
+                  100마리중 1마리 된다는 아기고양이의 귀여운 까꿍 영상 모음
+                </h6>
+              </div>
+              <div class="video_count">
+                <span>모카라떼베리MochaLatteBerry</span>
+                <span>조회수 83만회 1개월 전 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/WhLcQAzbpGA">
+              <img src="https://j.gifs.com/Gv0ZV5.jpg" alt="" />
+              <img src="https://j.gifs.com/Gv0ZV5.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">04:28</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>milet「Tell me」SPECIAL STUDIO LIVE 2020.02.19</h6>
+              </div>
+              <div class="video_count">
+                <span>milet Official YouTube Channel </span>
+                <span>조회수 94만회 • 6개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/-bfh5JMseDU">
+              <img src="https://j.gifs.com/XLW69V.jpg" alt="" />
+              <img src="https://j.gifs.com/XLW69V.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">01:31</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>milet「Prover」teaser</h6>
+              </div>
+              <div class="video_count">
+                <span>milet Official YouTube Channel </span>
+                <span>조회수 30만회 • 8개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/u4SJPKo4PrA">
+              <img src="https://j.gifs.com/0YKgrN.jpg" alt="" />
+              <img src="https://j.gifs.com/0YKgrN.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">06:34</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>
+                  Aimer「花の唄」LIVE Orchestra ver.（Aimer special concert with
+                  スロヴァキア国立放送交響楽団 "ARIA STRINGS"）
+                </h6>
+              </div>
+              <div class="video_count">
+                <span>Aimer Official YouTube Channel </span>
+                <span>조회수 98만회 • 4개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/6SNscvxLP4E">
+              <img src="https://j.gifs.com/wV1jqX.jpg" alt="" />
+              <img src="https://j.gifs.com/wV1jqX.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">06:02</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>
+                  Amazarashi(아마자라시 - 한글자막) - 내가 죽으려고 생각한
+                  것은【acoustic live ver】
+                </h6>
+              </div>
+              <div class="video_count">
+                <span>Beomjun kwon</span>
+                <span>조회수 367만회 • 2년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/6Zj6CA5A-k8">
+              <img src="https://j.gifs.com/P7L1o4.jpg" alt="" />
+              <img src="https://j.gifs.com/P7L1o4.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">04:12</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>캄파넬라 [PV] sm8639738_youtube</h6>
+              </div>
+              <div class="video_count">
+                <span>admfischer</span>
+                <span>조회수 1만회 • 10년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://www.youtube.com/watch?v=17vhlFCGAnQ">
+              <img src="https://j.gifs.com/1WLjAm.jpg" alt="" />
+              <img src="https://j.gifs.com/1WLjAm.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">04:42</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>마음 - 로봇</h6>
+              </div>
+              <div class="video_count">
+                <span> tsuisaki</span>
+                <span>조회수 7만회 9년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/71asy5PbR8o">
+              <img src="https://j.gifs.com/91W8ZD.jpg" alt="" />
+              <img src="https://j.gifs.com/91W8ZD.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">04:44</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>마음 - 과학자</h6>
+              </div>
+              <div class="video_count">
+                <span>dl2094</span>
+                <span>조회수 2만회 10년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/QRQrRCbnqO8?list=RD17vhlFCGAnQ">
+              <img src="https://j.gifs.com/r810Dp.jpg" alt="" />
+              <img src="https://j.gifs.com/r810Dp.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">04:45</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>마음 - 로봇x과학자</h6>
+              </div>
+              <div class="video_count">
+                <span>쮸쀼쮸쀼</span>
+                <span>조회수 2만회 11년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://www.youtube.com/watch?v=_dN_AgD-nhc">
+              <img src="https://j.gifs.com/vl1g30.jpg" alt="" />
+              <img src="https://j.gifs.com/vl1g30.gif" alt="" />
+            </a>
+            <div class="video_box_icons">
+              <div class="video_box__icon">
+                <span>나중에 볼 동영상</span>
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="video_box__icon">
+                <span>목록에 추가</span>
+                <i class="fas fa-indent"></i>
+              </div>
+            </div>
+            <span class="video_time">08:10</span>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>당신은 약하십니까, 강하십니까</h6>
+              </div>
+              <div class="video_count">
+                <span>유승근</span>
+                <span>조회수 93만회 5년 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video_box">
+          <div class="video_image">
+            <a href="https://youtu.be/mxJGDa7ThbE">
+              <img src="https://j.gifs.com/yoj8xg.jpg" alt="" />
+              <img src="https://j.gifs.com/yoj8xg.gif" alt="" />
+            </a>
+          </div>
+          <div class="video_text">
+            <div class="video_column">
+              <div class="vedio_icon">
+                <i class="fas fa-fire"></i>
+              </div>
+            </div>
+            <div class="video_column">
+              <div class="video_title">
+                <h6>[Playlist] 귀르가즘 제대로 주는 갬성 팝송 노래 모음#2</h6>
+              </div>
+              <div class="video_count">
+                <span>한번 들어봐</span>
+                <span>조회수 112만회 2개월 전</span>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>

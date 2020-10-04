@@ -1,0 +1,76 @@
+@import "header.css";
+@import "sideMenu.css";
+@import "sideMenu-hidden.css";
+@import "main.css";
+@import "gudog.css";
+@import "storege.css";
+@import "viewing-record.css";
+@import "ingi.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 20px;
+  opacity: 0.7;
+  position: relative;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(245, 245, 245) 0%,
+    white,
+    rgb(245, 245, 245) 100%
+  );
+}
+
+label {
+  cursor: pointer;
+}
+.circleAni {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  height: 0px;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+
+  top: 9px;
+  right: 9px;
+  transition: all 0.2s ease-in-out;
+}
+i:active .circleAni {
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  right: -10px;
+  opacity: 0.2;
+}
+#menu_open,
+#menu_open2 {
+  display: none;
+}
+/* #menu_open:checked ~ .side_menu {
+  display: none;
+} */
+#menu_open:checked ~ .side_menu-hidden {
+  left: 0;
+}
